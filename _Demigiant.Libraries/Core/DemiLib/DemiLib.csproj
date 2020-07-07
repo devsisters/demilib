@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\DeScriptExecutionOrderAttribute.cs" />
     <Compile Include="Core\GUIUtils.cs" />
     <Compile Include="DeColorPalette.cs" />
     <Compile Include="DeInputUtils.cs" />
