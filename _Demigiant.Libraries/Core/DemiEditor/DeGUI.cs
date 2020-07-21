@@ -92,9 +92,9 @@ namespace DG.DemiEditor
         /// </summary>
         /// <param name="guiColorPalette">Eventual <see cref="DeColorPalette"/> to use</param>
         /// <param name="guiStylePalette">Eventual <see cref="DeStylePalette"/> to use</param>
-        public static bool BeginGUI(DeColorPalette guiColorPalette = null, DeStylePalette guiStylePalette = null)
+        public static void BeginGUI(DeColorPalette guiColorPalette = null, DeStylePalette guiStylePalette = null)
         {
-            bool stylesReinitialized = ChangePalette(guiColorPalette, guiStylePalette);
+            ChangePalette(guiColorPalette, guiStylePalette);
             defaultGUIColor = GUI.color;
             defaultGUIBackgroundColor = GUI.backgroundColor;
             defaultGUIContentColor = GUI.contentColor;
@@ -109,8 +109,6 @@ namespace DG.DemiEditor
                 isMouseDown = false;
                 break;
             }
-
-            return stylesReinitialized;
         }
 
         /// <summary>
